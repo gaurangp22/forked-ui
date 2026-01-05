@@ -2,6 +2,8 @@
 
 A modern UI component library built with React, Next.js, and Tailwind CSS. Copy, paste, and customize beautiful components for your next project.
 
+🌐 **[Live Demo](https://forked-ui.vercel.app/)**
+
 ## Getting Started
 
 First, run the development server:
