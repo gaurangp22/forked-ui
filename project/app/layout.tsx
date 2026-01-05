@@ -15,8 +15,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Forked UI",
-  description: "A modern UI component library built with React and Tailwind CSS",
+  title: {
+    default: "Forked UI - Modern React & Tailwind CSS Components",
+    template: "%s | Forked UI",
+  },
+  description: "A curated collection of 100+ premium UI components built with React, Next.js, Tailwind CSS, and shadcn/ui. Copy, paste, and customize beautiful components for your next project.",
+  keywords: ["React components", "Tailwind CSS", "UI library", "Next.js", "shadcn/ui", "web components", "frontend", "design system"],
+  authors: [{ name: "Forked UI" }],
+  creator: "Forked UI",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://forked-ui.vercel.app",
+    siteName: "Forked UI",
+    title: "Forked UI - Modern React & Tailwind CSS Components",
+    description: "A curated collection of 100+ premium UI components built with React, Next.js, Tailwind CSS, and shadcn/ui.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Forked UI - Modern React & Tailwind CSS Components",
+    description: "A curated collection of 100+ premium UI components built with React, Next.js, Tailwind CSS, and shadcn/ui.",
+    creator: "@gaurangp22",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -31,15 +55,15 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <RootProvider>
-          <ThemeProvider
+            <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
             >
-            <div className="flex flex-col min-h-screen">
-              <div className="flex-1">{children}</div>
-            </div>
+              <div className="flex flex-col min-h-screen">
+                <div className="flex-1">{children}</div>
+              </div>
             </ThemeProvider>
           </RootProvider>
         </body>

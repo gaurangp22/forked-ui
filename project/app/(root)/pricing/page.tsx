@@ -28,7 +28,7 @@ import {
     Dialog,
     DialogContent,
     DialogDescription,
-  
+
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
@@ -257,7 +257,7 @@ export default function PricingPage() {
     }
 
     function copyEmailToClipboard() {
-        navigator.clipboard.writeText("hi@kokonutui.com");
+        navigator.clipboard.writeText("hi@forked-ui.com");
         setHasCopied(true);
         setTimeout(() => setHasCopied(false), 1000);
     }
@@ -339,11 +339,10 @@ export default function PricingPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                className={`relative p-8 rounded-3xl border flex flex-col ${
-                                    tier.isHighlighted
+                                className={`relative p-8 rounded-3xl border flex flex-col ${tier.isHighlighted
                                         ? "bg-gradient-to-b from-white via-blue-50/50 to-white border-blue-200 shadow-lg shadow-blue-100/50 dark:from-zinc-900 dark:via-blue-950/5 dark:to-zinc-900 dark:border-blue-950/40 dark:shadow-none"
                                         : "bg-gradient-to-b from-white via-zinc-50/50 to-white border-zinc-200/60 shadow-md shadow-zinc-200/50 dark:from-zinc-900 dark:via-zinc-950/50 dark:to-zinc-900 dark:border-zinc-800/60 dark:shadow-none"
-                                }`}
+                                    }`}
                             >
                                 <div className="flex-1 space-y-6">
                                     <motion.div
@@ -433,11 +432,10 @@ export default function PricingPage() {
 
                                 <div className="mt-8">
                                     <Button
-                                        className={`w-full transition-all group relative overflow-hidden rounded-2xl ${
-                                            tier.price
+                                        className={`w-full transition-all group relative overflow-hidden rounded-2xl ${tier.price
                                                 ? "bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 dark:from-rose-500 dark:to-pink-500 shadow-lg hover:shadow-xl hover:shadow-rose-500/25 text-white"
                                                 : "bg-gradient-to-r hover:from-zinc-100 hover:to-zinc-50 dark:hover:from-zinc-800 dark:hover:to-zinc-900 hover:shadow-lg !dark:text-white"
-                                        }`}
+                                            }`}
                                         variant={
                                             tier.price ? "ghost" : "outline"
                                         }
@@ -463,10 +461,10 @@ export default function PricingPage() {
                     <p className="text-sm text-gray-900 dark:text-gray-100">
                         Have questions? Contact us at{" "}
                         <a
-                            href="mailto:hi@kokonutui.com"
+                            href="mailto:hi@forked-ui.com"
                             className="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors"
                         >
-                            hi@kokonutui.com
+                            hi@forked-ui.com
                         </a>
                     </p>
                 </motion.div>
@@ -629,7 +627,7 @@ export default function PricingPage() {
                                             onClick={copyEmailToClipboard}
                                         >
                                             <span className="text-sm font-medium">
-                                                hi@kokonutui.com
+                                                hi@forked-ui.com
                                             </span>
                                             {hasCopied ? (
                                                 <svg
