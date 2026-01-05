@@ -8,6 +8,17 @@
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: inherit;
+}
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

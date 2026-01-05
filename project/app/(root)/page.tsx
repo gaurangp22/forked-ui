@@ -8,6 +8,7 @@ import FloatingLines from "@/components/ui/FloatingLines";
 import LiquidEther from "@/components/ui/LiquidEther";
 import { BrowseBlocksButton } from "@/components/ui/browse-blocks";
 import { BrowseComponentsButton } from "@/components/ui/browse-button";
+import { Footer } from "@/components/ui/footer";
 import { motion } from "motion/react";
 import { Sparkles, Zap, Code2, Layers } from "lucide-react";
 
@@ -16,7 +17,7 @@ export default function Home() {
         <main className="bg-white dark:bg-black/5 overflow-x-hidden">
             <div className="relative w-full min-h-screen flex items-center justify-center">
                 <div style={{ width: '100%', height: '100vh', position: 'absolute', top: 0, left: 0 }}>
-                    <FloatingLines 
+                    <FloatingLines
                         enabledWaves={['top', 'middle', 'bottom']}
                         lineCount={[10, 15, 20]}
                         lineDistance={[8, 6, 4]}
@@ -26,7 +27,7 @@ export default function Home() {
                         parallax={true}
                     />
                 </div>
-                
+
                 {/* Hero Content Overlay */}
                 <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 py-20 text-center">
                     <motion.div
@@ -169,6 +170,9 @@ export default function Home() {
                     </motion.div>
                 </div>
             </section>
+
+            {/* Footer */}
+            <Footer />
         </main>
     );
 }

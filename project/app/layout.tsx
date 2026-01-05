@@ -4,6 +4,7 @@ import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 import { RootProvider } from "fumadocs-ui/provider";
 import { ThemeProvider } from "next-themes";
+import { BackToTop } from "@/components/ui/back-to-top";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
               <div className="flex flex-col min-h-screen">
                 <div className="flex-1">{children}</div>
               </div>
+              <BackToTop />
             </ThemeProvider>
           </RootProvider>
         </body>
