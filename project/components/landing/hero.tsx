@@ -26,7 +26,7 @@ import Card08 from "../codesnippetui/card/card-08";
 import { BrowseBlocksButton } from "../ui/browse-blocks";
 import { BrowseComponentsButton } from "../ui/browse-button";
 import Features from "./feature-block";
-import { FloatingLinesBackground } from "../ui/floating-lines-background";
+import FloatingLines from "../ui/FloatingLines";
 
 import Card02 from "../codesnippetui/card/card-02";
 
@@ -44,7 +44,7 @@ interface Action {
 export function HeroSection() {
   return (
     <div className="relative mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 px-4 sm:px-6 py-12 md:py-16 lg:py-20">
-      <FloatingLinesBackground className="opacity-40" />
+      <FloatingLines />
       {/* Left side - Title and CTA */}
       <div className="relative z-10 w-full lg:w-[45%] flex flex-col items-start text-left space-y-8">
         <motion.div
